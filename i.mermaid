@@ -1,0 +1,28 @@
+graph TD
+    %% Define Nodes with Styling
+    A[("fa:fa-user User Query")] -->|HTTP Request| B[["fa:fa-window-maximize Streamlit UI"]]
+    B -->|Process Input| C[["fa:fa-link LangChain Conversation Chain"]]
+    C -->|Retrieve Context| D[["fa:fa-database ChromaDB Vector Store"]]
+    D -->|Generate Embeddings| E[["fa:fa-cog Embeddings Model<br>(e.g., OpenAI/text-embedding-3-small)"]]
+    E -->|Fetch Similar Vectors| D
+    D -->|Augmented Context| C
+    C -->|Generate Response| F[["fa:fa-comment Language Model<br>(e.g., GPT-4, Claude 3)"]]
+    F -->|Stream Output| B
+    B -->|Display Response| A
+
+    %% Styling
+    classDef user fill:#2d2d5b,stroke:#6a0dad,color:#fff
+    classDef component fill:#1e1e3f,stroke:#4b0082,color:#fff,stroke-width:2px
+    classDef model fill:#3a1b6e,stroke:#9370db,color:#fff,stroke-dasharray:3
+    classDef db fill:#0f4c5c,stroke:#5e8c8c,color:#fff
+
+    class A user
+    class B,C component
+    class D db
+    class E,F model
+
+    %% Legend
+    legend[("fa:fa-map Architecture Legend")]
+    legend --> components[("Components: Rectangles")]
+    legend --> models[("Models/DB: Dashed Borders")]
+    legend --> flow[("Flow: Arrows")]
