@@ -4,6 +4,16 @@
 This project is a next-generation AI chatbot built with LangChain, ChromaDB, and modern embedding models, wrapped in a sleek, responsive Streamlit interface.
 The bot uses Retrieval-Augmented Generation (RAG) to blend real-time conversational intelligence with persistent memory, enabling it to remember context and pull relevant information from stored knowledge.
 
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
+![LangChain](https://img.shields.io/badge/LangChain-Framework-brightgreen)
+![RAG](https://img.shields.io/badge/RAG-Retrieval--Augmented%20Generation-orange)
+![Chroma](https://img.shields.io/badge/Chroma-Vector%20DB-purple)
+![Hugging%20Face](https://img.shields.io/badge/Hugging%20Face-🤗-yellow)
+![PyTorch](https://img.shields.io/badge/PyTorch-ML%2FDL-red?logo=pytorch)
+![LLMs](https://img.shields.io/badge/LLMs-Large%20Language%20Models-blueviolet)
+![LangAPIs](https://img.shields.io/badge/LangAPIs-Integration-lightblue)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
+
 
 
 <img width="1536" height="1024" alt="sambot" src="https://github.com/user-attachments/assets/602ca5dd-a045-4cfe-b4a0-6f6368015817" />
