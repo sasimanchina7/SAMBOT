@@ -77,16 +77,16 @@ def add_bg_with_overlay(bg_image_file):
 st.set_page_config(page_title=" Sasi Manchina's Assistant Bot - smabot : Techie AI Chatbot", layout="wide")
 
 # Add background with tech words overlay
-add_bg_with_overlay("image_vCjyiaev_1754762525531_raw.jpg")
+add_bg_with_overlay("images/bg.jpg")
 
-st.markdown("<h1 style='color:#d6b3ff; text-shadow: 0 0 15px #a855f7;'>🤖 Agentic AI & Gen AI Chatbot</h1>", unsafe_allow_html=True)
-st.markdown("<p style='color:#e9d5ff;'>Powered by Machine Learning, Generative AI, and next-gen Vector Search 🚀</p>", unsafe_allow_html=True)
+st.markdown("<h1 style='color:#d6b3ff; text-shadow: 0 0 15px #a855f7;'> Agentic AI & Gen AI Chatbot</h1>", unsafe_allow_html=True)
+st.markdown("<p style='color:#e9d5ff;'>Powered by Machine Learning, Generative AI, and next-gen Vector Search </p>", unsafe_allow_html=True)
 
 # ---------------- CHAT FUNCTIONALITY ---------------- #
 if "history" not in st.session_state:
     st.session_state.history = []
 
-user_input = st.text_input("💬 Ask me something Techy Techie:")
+user_input = st.text_input("Ask me something Techy Techie:")
 
 if st.button("Send"):
     if user_input.strip():
@@ -106,4 +106,4 @@ uploaded_file = st.file_uploader("📂 Upload a text file to add to my knowledge
 if uploaded_file is not None:
     text_content = uploaded_file.read().decode("utf-8")
     add_text_to_vector_db(text_content)
-    st.success("✅ File added to smabot memory!")
+    st.success(" File added to smabot memory!")
